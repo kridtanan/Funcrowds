@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+$spacing-base:8;
+$spacing-sm:10;
+$spacing-lg:16;
+$spacing-2xl:24;
+
+*{
+    font-family: 'Sarabun', sans-serif;
+}
+
+[data-navigation]{
+    [data-trigger]{
+        @media (max-width:768px){
+            &:checked ~ [data-trigger-menu]{
+                @apply scale-y-100;
+            }
+        }
+        &:checked ~ [data-trigger-hamburgur]{
+            & > :nth-child(1){
+                @apply transform translate-y-2.5 rotate-45;
+            }
+            & > :nth-child(2){
+                @apply opacity-0;
+            }
+            & > :nth-child(3){
+                @apply transform -translate-y-2.5 -rotate-45;
+            }
+        }
+    }
+}
+[data-accordion]{
+    [data-trigger]{
+        &:checked ~ [data-trigger-content]{
+            @apply scale-y-100 static;
+        }
+        &:checked ~ [data-trigger-symbol]{
+            @apply transform rotate-180 stroke-current text-red-500;
+        }
+    }
+}
+

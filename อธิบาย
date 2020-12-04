@@ -1,0 +1,31 @@
+- src/components
+    สำหรับเก็บ ui ที่ใช้ซ้ำ เช่น navigation , footer 2 component นี้ถูกใช้ในหน้า  src/app.js
+    *จัดการ navigation ~ footer หลักได้ในนี้
+
+- src/pages 
+    สำหรับเก็บ หน้าเว็บแต่หละหน้า
+    *จัดการ page ต่างๆ หลักได้ในนี้
+
+
+- src/functioanl 
+    สำหรับเก็บฟังก์ชั่นที่สรา้งขึ้นมาเอง ในโปรเจ็คนี้มีฟังก์ชั่นแปลภาษาอยู่ src/functional/functranslate.js
+    div ที่จะแปลจะต้องมี data-i18n="key" กำหนดไว้เช่น <h1 data-i18n="ซื้อ">ซื้อ</h1> แล้วไปเพิ่ม key ใส่ใน translateConfig.js
+    เช่นจะแปลจะ "TH" เป็น "EN" ต้องเข้าไปเพิ่ม key ใน
+
+    const translateConfig{ 
+        TH:{...}
+        EN:{
+        "ซื้อ":"buy"
+        }
+    }
+
+- src/style
+    สำหรับเก็บ css 
+    *จัดการ css ต่างๆ หลักได้ในนี้
+
+- public/assets/~
+    เก็บไฟลฺภาพต่างๆนาๆ โฟลเดอร์ที่เก็บภาพสำหรับภาษาอังกฤษด้วย จะต้องแยกเป็นโฟลเดอร์ TH / EN เช่น assets/logo/TH & assets/logo/EN 
+
+
+
+
