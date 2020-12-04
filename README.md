@@ -9,16 +9,19 @@
 
 - src/functioanl 
     สำหรับเก็บฟังก์ชั่นที่สรา้งขึ้นมาเอง ในโปรเจ็คนี้มีฟังก์ชั่นแปลภาษาอยู่ src/functional/functranslate.js
-    div ที่จะแปลจะต้องมี data-i18n="key" กำหนดไว้เช่น <h1 data-i18n="ซื้อ">ซื้อ</h1> แล้วไปเพิ่ม key ใส่ใน translateConfig.js
+    div ที่จะแปลจะต้องมี data-i18n="key" กำหนดไว้เช่น 
+    ```<h1 data-i18n="ซื้อ">ซื้อ</h1> ```
+    แล้วไปเพิ่ม key ใส่ใน translateConfig.js
     เช่นจะแปลจะ "TH" เป็น "EN" ต้องเข้าไปเพิ่ม key ใน
-    ``
+    
+    ```
     const translateConfig{ 
         TH:{...}
         EN:{
         "ซื้อ":"buy"
         }
     }
-    ``
+    ```
 
 - src/style
     สำหรับเก็บ css 
