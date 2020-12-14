@@ -1,4 +1,5 @@
 import React from "react";
+ 
 
 export default function Accordion({ title, imgPath, i18n }) {
   let imgTag = [];
@@ -27,7 +28,7 @@ export default function Accordion({ title, imgPath, i18n }) {
       />
       <svg
         data-trigger-symbol
-        className="transition duration-200 absolute right-0 pointer-events-none w-6 h-6 mt-7 mr-6"
+        className="transition duration-200 absolute right-0 pointer-events-none w-6 h-6 mt-7 mr-1"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"

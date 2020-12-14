@@ -30,7 +30,7 @@ export default function Manual() {
             title="ระบบสร้างแพคเกจ"
             i18n="ระบบสร้างแพคเกจ"
             imgPath={[
-              `/assets/manual/${currentLanguage}/package_1.jpg`,
+              `/assets/manual/${currentLanguage}/package.jpg`,
             ]}
           />
           <Accordion

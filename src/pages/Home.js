@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import "../style/style.css"
 export default function Home() {
   
   const [previewNumber,setPreviewNumber] = useState(1);
@@ -17,12 +17,12 @@ export default function Home() {
           backgroundSize: "cover",
         }}
       >
-        <div className="flex flex-col gap-y-6">
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-gray-900">
+        <div className="flex flex-col gap-y-6 mleft">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900">
             FunCrowds
           </h1>
           <p
-            className="w-96 text-gray-800 font-medium"
+            className="w-96 text-gray-800 font-medium width-text"
             data-i18n="ข้อความแนะนำ"
           >
             ระบบโปรโมชั่นการ สะสมคะแนนในการแลก
@@ -246,10 +246,11 @@ export default function Home() {
         </div>
       </section>
       {/* Call To Action */}
+       
       <section className="py-64 px-sm 2xl:px-2xl grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-        <div className="w-min space-y-6">
-          <h1 className="text-4xl font-bold text-gray-900 leading-normal">เพื่อประสบการณ์การที่ดีสำหรับลูกค้า</h1>
-          <p className="w-96 ont-medium text-gray-500" data-i18n="ยินดีให้บริการ">
+        <div className="w-min space-y-5">
+          <h1 className="text-3xl font-bold text-gray-900 leading-normal " data-i18n="เพื่อประสบการณ์การที่ดีสำหรับลูกค้า">เพื่อประสบการณ์การที่ดีสำหรับลูกค้า</h1>
+          <p className="w-96 text-gray-800 font-medium width-text" data-i18n="ยินดีให้บริการ">
           ทางเรายินดีให้บริการ ทางด้านการเพิ่มโปรโมชั่นที่ช่วยสร้าง ความประทับใจ
           ความคุ้มค่า เมื่อลูกค้าได้กลับมา ซื้อซ้ำ.
         </p>
@@ -260,6 +261,7 @@ export default function Home() {
         >
           สมัครใช้บริการ
         </Link>
+        
           </div>
         <div className="flex relative flex-col items-center justify-center">
             <div className="h-56 md:h-96 rounded-lg overflow-hidden shadow-xl">
@@ -272,6 +274,7 @@ export default function Home() {
             </div>
         </div>
       </section>
+      
       </div>
     </main>
   );

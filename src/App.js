@@ -15,13 +15,16 @@ import { useRecoilState } from "recoil";
 import { language } from "./store";
 import translate from "./functional/translate";
 
-export default function App(props) {
 
+export default function App(props) {
+  
   const [currentLanguage] = useRecoilState(language);
 
   useEffect(()=>{
     translate(currentLanguage);
   },[currentLanguage])
+
+  
 
   return (
     <>
@@ -38,6 +41,7 @@ export default function App(props) {
         </AppContainer>
       </Switch>
       <Footer />
+      
     </>
   );
 }

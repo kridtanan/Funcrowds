@@ -15,7 +15,7 @@ export default function ContactUs() {
                   <span className="text-xl font-medium block mb-3  text-gray-100" data-i18n="ที่อยู่">
                     ที่อยู่
                   </span>
-                  <li className=" text-gray-50">
+                  <li className=" text-gray-50" data-i18n="ที่อยู่ๆ" >
                     บริษัท ไอเดียล แอพโพรช จำกัด เลขที่ 2 ซอยกรุงเทพกรีฑา 19
                     แขวงทับช้าง เขตสะพานสูง กรุงเทพฯ 10250
                   </li>

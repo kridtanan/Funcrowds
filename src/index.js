@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-import App from "./app";
+import App from "./App.js";
 import reportWebVitals from "./reportWebVitals";
 import "./style/tailwind.scss";
+import "./style/style.css"
 
 ReactDOM.render(
   <BrowserRouter>
