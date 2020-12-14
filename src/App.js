@@ -12,7 +12,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import AppContainer from "./appContainer";
 import { useRecoilState } from "recoil";
-import { language } from "./store";
+import { language } from "./store"; 
 import translate from "./functional/translate";
 
 
